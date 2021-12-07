@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MyF1Component></MyF1Component>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyF1Component from './components/MyF1Component.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyF1Component,
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+@font-face {
+  font-family: "F1";
+  src: local("F1"),
+    url("./assets/Formula1 Display Regular.ttf");
 }
+
+body {
+  background-color : #252525;
+}
+
+* {
+  font-family: F1,sans-serif;
+}
+
+
+
+
 </style>
