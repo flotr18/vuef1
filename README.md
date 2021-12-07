@@ -1,5 +1,12 @@
 # vuef1
 
+## API setup
+
+
+```
+node api.js
+
+```
 ## Project setup
 ```
 npm install
